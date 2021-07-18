@@ -172,6 +172,8 @@ def trip_duration_stats(df):
     
     
 def print_birthyear(df):
+    """Calculated stats about customer birthyear and prints to the terminal."""
+
     if 'Birth Year' in df:
         print("The minimum, maximum and most common birth years for users are:")
         print(str(df["Birth Year"].min()))
