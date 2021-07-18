@@ -12,7 +12,10 @@ three cities in the US.  The user is able to specify different filters to apply 
 calculated.
 
 ### Files used
-Include the files used
+Files used:
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
