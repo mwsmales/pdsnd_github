@@ -7,7 +7,9 @@ Created on July 18th 2021
 Project Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+This is a executable python script.  It allows the user to calculate summary statistics from bikeshre data from 
+three cities in the US.  The user is able to specify different filters to apply before the summary statistics are
+calculated.
 
 ### Files used
 Include the files used
