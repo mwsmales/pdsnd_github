@@ -169,7 +169,18 @@ def trip_duration_stats(df):
     print("")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    
+    
+def print_birthyear(df):
+    if 'Birth Year' in df:
+        print("The minimum, maximum and most common birth years for users are:")
+        print(str(df["Birth Year"].min()))
+        print(str(df["Birth Year"].max()))
+        print(str(df["Birth Year"].mode()[0]))
+        print("")
+    else:
+        print('Birth year stats cannot be calculated because birth year does not appear in the dataframe')
+        print("")
 
 
 def user_stats(df):
@@ -194,16 +205,7 @@ def user_stats(df):
 
 
     # Display earliest, most recent, and most common year of birth (if present in the dataset)
-    if 'Birth Year' in df:
-        print("The minimum, maximum and most common birth years for users are:")
-        print(str(df["Birth Year"].min()))
-        print(str(df["Birth Year"].max()))
-        print(str(df["Birth Year"].mode()[0]))
-        print("")
-    else:
-        print('Birth year stats cannot be calculated because birth year does not appear in the dataframe')
-        print("")
-
+    print_birthyear(df)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
